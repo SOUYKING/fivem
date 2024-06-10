@@ -114,6 +114,21 @@
             </div>
         </div>
     </div>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // Disable text selection and copying
+        document.addEventListener('selectstart', function(event) {
+            event.preventDefault();
+        });
+
+        document.addEventListener('copy', function(event) {
+            event.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
